@@ -13,7 +13,7 @@ params = {
     "duration": 25.0,  # 总模拟时间 (s)
     "angle_mode": "DEG",  # 模式选择: 'DEG' (角度) 或 'RAD' (弧度)
     "theta1_0": 90.0,  # 初始角度1
-    "theta2_0": 90.0,  # 初始角度2
+    "theta2_0": 90.0002,  # 初始角度2
     "w1_0": 0.0,  # 初始角速度1 (无论模式，建议设为0)
     "w2_0": 0.0,  # 初始角速度2
 }
@@ -96,11 +96,11 @@ print(f"模拟完成，环境模式: {params['angle_mode']}")
 for step_data in sim_results[:5]:
     print(f"角度1: {step_data[0]:.2f}, 角度2: {step_data[1]:.2f}")
 
-csv_filename = "pendulum_data.csv"
+csv_filename = "pendulum_data_+2*1e-4.csv"
 with open(csv_filename, mode='w', newline='') as f:
     writer = csv.writer(f)
     # 写入表头
-    writer.writerow(["time", "theta1", "theta2"])
+    writer.writerow(["theta1", "theta2"])
     # 写入数据
     writer.writerows(sim_results)
 
