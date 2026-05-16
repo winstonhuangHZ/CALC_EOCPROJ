@@ -72,18 +72,40 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Double Pendulum, Where Newtonian Physics Dies.}
+\begin{frame}{Double Pendulum, Where Newtonian Physics Dies}
 
 \end{frame}
 
 \begin{frame}{Introduction To DE Calculation Approaches}
     \begin{columns}[c]
-        \column{0.5\textwidth}
-
-        \column{0.45\textwidth}
-        \textbf{\small Fourth-Order Runge-Kutta (RK4) Approach:}
+        \column{0.55\textwidth}
+        \begin{figure}
+            \includegraphics[width=0.8\textwidth]{figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equation_(red_is_the_exact_solution).svg.png}
+            \caption{\footnotesize Comparison of the Runge-Kutta methods for the differential equation. Red line is the exact solution, 4th order Runge-Kutta is what we mainly use in this project, and is significantly more accurate. Figure from Wikicommon, CC BY-SA 3.0 \ccby}
+        \end{figure}
         
+        \column{0.45\textwidth}
+        \textbf{\small Fourth-Order Runge-Kutta (RK4) Approach: \\\vspace{1em}}
+        \scalebox{0.8}{%
+        \fbox{
+        \vbox{
+        \begin{align*}
+            \text{Let}\ \frac{\mathrm{d}y}{\mathrm{d}x} &= f(x,y), \\
+            y_{n+1} &= y_n + \frac{\Delta x}{6} (k_1 +2k_2+2k_3+k_4) \\
+            \text{Where, } \\
+            k_1 &= f(x_n, y_n) \\
+            k_2 &= f(x_n+\frac{\Delta x}{2}, y_n+\frac{\Delta x}{2} k_1) \\
+            k_3 &= f(x_n+\frac{\Delta x}{2}, y_n+\frac{\Delta x}{2} k_2) \\
+            k_4 &= f(x_n+\Delta x, y_n+\Delta x k_3)
+        \end{align*}
+        }
+        }
+        }
     \end{columns} 
+\end{frame}
+
+\begin{frame}
+
 \end{frame}
 
 
