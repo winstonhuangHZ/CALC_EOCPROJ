@@ -384,6 +384,11 @@ INPUT ./figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equat
 INPUT ./figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equation_(red_is_the_exact_solution).svg.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/ccicons/ccicons.tfm
+INPUT ./figures/Euler_method.svg.png
+INPUT ./figures/Euler_method.svg.png
+INPUT ./figures/Euler_method.svg.png
+INPUT ./figures/Euler_method.svg.png
+INPUT ./figures/Euler_method.svg.png
 OUTPUT presentation.nav
 OUTPUT presentation.toc
 OUTPUT presentation.snm
