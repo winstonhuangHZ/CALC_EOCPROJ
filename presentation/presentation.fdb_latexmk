@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1779089399.04674 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1779089401.62788 0
-  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1779089398.74635 8407 ba0bb458f6f262b916d330f9adbdbbcc ""
+["pdflatex"] 1779093852.13399 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1779093856.00365 0
+  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1779093851.70402 9138 cf9f23413056859e27c01cbd48e42be7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -228,10 +228,10 @@
   "figures/Chaos_Intro.pdf" 1778824211.30561 48500 cc29dda61ef1db32a5ed6e830b05e7e7 ""
   "figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equation_(red_is_the_exact_solution).svg.png" 1778897091.48264 334358 f008557291ecadbddd4a88671298a3a6 ""
   "figures/Euler_method.svg.png" 1778984374.67331 64982 1abe118656a2c9b3a71f95692d17d08d ""
-  "presentation.aux" 1779089401.36747 1843 d11f429f744d5aed4eb891a654197ed6 "pdflatex"
-  "presentation.nav" 1779089401.36955 1109 07396102f9d82bf25877ba7d82798efb "pdflatex"
-  "presentation.out" 1779089399.9367 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentation.tex" 1779089398.74635 8407 ba0bb458f6f262b916d330f9adbdbbcc ""
+  "presentation.aux" 1779093855.61337 1843 d11f429f744d5aed4eb891a654197ed6 "pdflatex"
+  "presentation.nav" 1779093855.61507 1109 07396102f9d82bf25877ba7d82798efb "pdflatex"
+  "presentation.out" 1779093853.58795 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentation.tex" 1779093851.70402 9138 cf9f23413056859e27c01cbd48e42be7 ""
   (generated)
   "presentation.aux"
   "presentation.log"

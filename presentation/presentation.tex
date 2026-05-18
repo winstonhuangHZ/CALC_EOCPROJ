@@ -11,6 +11,8 @@
 \usepackage[T1]{fontenc}
 \usefonttheme{serif} % 强制使用衬线体，找回你的 Computer Modern 感
 
+\newcommand{\dd}{\mathrm{d}}
+
 % --- 页面信息 ---
 \title{Double Pendulum\\ and The Chaos Theory \vspace{-0.5em}}
 \author[Winston]{Winston (Wenqin) Huang \vspace{-1em}}
@@ -96,6 +98,18 @@
 
 \begin{frame}{Lagrangian Physics and Double Pendulum}
 
+    \small Now let's move on to physics, deriving expressions for energy.
+    \begin{align*}
+        \text{Position of Ball 1:}\ &x_1 = l_1 \sin{\theta_1},\, y_1 = -l_1 \cos{\theta_1} \\
+        \text{Position of Ball 2:}\ &x_2 = x_1 + l_2 \sin{\theta_2},\, y_2 = y_1 -l_2 \cos{\theta_2}
+    \end{align*}
+    \\\small So,
+    \begin{align*}
+        \text{Speed of Ball 1}\ v_1 &= \frac{\dd x_1}{\dd t},\ \text{Speed of Ball 2}\ v_2 = \frac{\dd x_2}{\dd t}\\
+        \text{Total } \text{E}_k &= \frac{1}{2} m_1 (v_1)^2+\frac{1}{2} m_2 (v_2)^2,\, \text{Total E}_p = m_1gy_1+m_2gy_2\\
+        L&=T-V=\text{E}_k-\text{E}_p=\frac{1}{2}m_1(v_1)^2+\frac{1}{2}m_2(v_2)^2-m_1gy_1-m_2gy_2
+    \end{align*}
+    
 
 
 \end{frame}
