@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1778999806.92421 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1778999810.66463 0
-  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1778999806.53063 7084 34126a8b641ad6946a7e2b03762cf8bc ""
+["pdflatex"] 1779089399.04674 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1779089401.62788 0
+  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1779089398.74635 8407 ba0bb458f6f262b916d330f9adbdbbcc ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -13,7 +13,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm" 1136768653 3584 3169d30142b88a27d4ab0e3468e963a2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm" 1136768653 3584 3c76ccb63eda935a68ba65ba9da29f1a ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecrm2488.tfm" 1136768653 3584 406ad7b70d9a41f7833f92b6313150c8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecss1200.tfm" 1136768653 3584 db562fb1d1c474cc55f0ce8a1dd94fe7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm" 1136768653 3072 b73d2778cc3af44970de4de5e032d7f6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm" 1136768653 3072 8b5a64dc91775463bc95e2d818524028 ""
@@ -46,6 +45,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb" 1509395996 11767 1689f192b3621a5be44996e5940b6bb6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb" 1215737283 154600 ea54091d31de803b613ba9e80ca51709 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
@@ -55,7 +55,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1215737283 145929 f25e56369a345c4ff583b067cd87ce8e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb" 1215737283 131438 3aa300b3e40e5c8ba7b4e5c6cebc5dd6 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb" 1215737283 131381 2285dee019b5f465b19f189dee464723 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb" 1215737283 196446 8fbbe4b97b83e5182def6d29a44e57fb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb" 1215737283 198221 ca5aa71411090ef358a6cc78b7458365 ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -229,10 +228,10 @@
   "figures/Chaos_Intro.pdf" 1778824211.30561 48500 cc29dda61ef1db32a5ed6e830b05e7e7 ""
   "figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equation_(red_is_the_exact_solution).svg.png" 1778897091.48264 334358 f008557291ecadbddd4a88671298a3a6 ""
   "figures/Euler_method.svg.png" 1778984374.67331 64982 1abe118656a2c9b3a71f95692d17d08d ""
-  "presentation.aux" 1778999810.27407 1463 6bec2ce22dafd22d70eecba9d3a39594 "pdflatex"
-  "presentation.nav" 1778999810.27576 923 02772eacdfe77d67b79e45a640fd18ab "pdflatex"
-  "presentation.out" 1778999808.40144 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentation.tex" 1778999806.53063 7084 34126a8b641ad6946a7e2b03762cf8bc ""
+  "presentation.aux" 1779089401.36747 1843 d11f429f744d5aed4eb891a654197ed6 "pdflatex"
+  "presentation.nav" 1779089401.36955 1109 07396102f9d82bf25877ba7d82798efb "pdflatex"
+  "presentation.out" 1779089399.9367 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentation.tex" 1779089398.74635 8407 ba0bb458f6f262b916d330f9adbdbbcc ""
   (generated)
   "presentation.aux"
   "presentation.log"

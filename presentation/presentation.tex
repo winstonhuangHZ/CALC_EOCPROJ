@@ -2,8 +2,8 @@
 \usepackage{ccicons}
 
 % --- 极简核心设置 ---
-\usetheme{default} 
-\usecolortheme{dove} % 经典的黑白配色方案，没有任何杂色
+\usetheme{default} %default
+\usecolortheme{dove} % 经典的黑白配色方案，没有任何杂色 dove
 \setbeamertemplate{navigation symbols}{} % 删掉右下角那些没用的微型图标
 \setbeamertemplate{frametitle}[default][center] % 标题居中（如果喜欢左对齐就删掉center）
 \usepackage{amsmath}
@@ -12,7 +12,7 @@
 \usefonttheme{serif} % 强制使用衬线体，找回你的 Computer Modern 感
 
 % --- 页面信息 ---
-\title{\Huge Double Pendulum\\ and The Chaos Theory \vspace{-0.5em}}
+\title{Double Pendulum\\ and The Chaos Theory \vspace{-0.5em}}
 \author[Winston]{Winston (Wenqin) Huang \vspace{-1em}}
 \institute{Olive Tree International Academy \vspace{-1em}}
 \date{\small May-June, 2026}
@@ -54,6 +54,7 @@
     \begin{description}
         \item[\textbf{Differential Equation}:]{It is the core of simulation algorithm we applied in this project, the entire simulation was run based on a differential equation derived by \textit{Lagrangian Mechanics}, so the differential equation we learned in unit 7 is the core of our project.}
         \item[\textbf{Limit and Approaching}:]{In our project, the observation of the simulation accuracy as time step changes is also a core part. By speculating the result approaches a value as step decreases (becomes more accurate), we could choose a suitable time step for simulation that is both efficient and accurate.}
+        \item[\textbf{Integration (by Part)}:]{For deriving Euler-Lagrange Equation.}
     \end{description}
         
 \end{frame}
@@ -78,7 +79,28 @@
 
 \begin{frame}{Lagrangian Physics and Double Pendulum}
 
+    \small Start from the Euler-Lagrangian Equation,
+
+    \begin{equation}
+    \frac{\partial L}{\partial q} - \frac{d}{dt} \frac{\partial L}{\partial \dot{q}} = 0
+    \label{eq:euler-lagrangian}
+    \end{equation}
+    \\where the Lagrangian $L = T-V$, $\partial$ (in multivariable calculus) basically means what $\mathrm{d}$ represents in normal calculus, $q$ is the generalized coordinates, which is angle ($\theta_i$) in our problem.
+    \\Citing~\ref{eq:euler-lagrangian}, for double pendulums, we have
+    \begin{align}
+        \frac{\mathrm{d}}{\mathrm{d}t} \left( \frac{\partial L}{\partial \dot{\theta}_1}\right) - \frac{\partial L}{\partial \theta_1} = 0,\,\frac{\mathrm{d}}{\mathrm{d}t} \left( \frac{\partial L}{\partial \dot{\theta}_2}\right) - \frac{\partial L}{\partial \theta_2} = 0
+    \end{align}
+
 \end{frame}
+
+
+\begin{frame}{Lagrangian Physics and Double Pendulum}
+
+
+
+\end{frame}
+
+
 
 \begin{frame}{Introduction To DE Calculation Approaches}
     \begin{columns}[c]
@@ -148,6 +170,14 @@
     }
 
     \small In this system, $\theta_{\bullet}$, $\omega_{\bullet}$, and $\alpha_{\bullet}$ respectively represents angular position, angular speed and angular acceleration for each part of the pendulum. $m_{\bullet}$ is the symbol of the mass of each pendulum, and $l_{\bullet}$ is the length of each pendulum.
+\end{frame}
+
+\begin{frame}{Methodology and Experiment}
+    \begin{itemize}
+        \item \textbf{Experiment 1:} Simulating double pendulum motions with slight initial difference, observing and discovering the \textit{chaos} in such systems. Visualize experimental results, and desctibe.
+        \item \textbf{Experiment 2:}
+    \end{itemize}
+
 \end{frame}
 
 
