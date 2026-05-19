@@ -109,8 +109,21 @@
         \text{Total } \text{E}_k &= \frac{1}{2} m_1 (v_1)^2+\frac{1}{2} m_2 (v_2)^2,\, \text{Total E}_p = m_1gy_1+m_2gy_2\\
         L&=T-V=\text{E}_k-\text{E}_p=\frac{1}{2}m_1(v_1)^2+\frac{1}{2}m_2(v_2)^2-m_1gy_1-m_2gy_2
     \end{align*}
-    
 
+\end{frame}
+
+\begin{frame}{Double Pendulum Equation System Derivation}
+
+    \small Substitute this Lagrangian $L$ expression back into formula (2) mentioned before, \\[5pt]
+    For example, for $\frac{\partial L}{\partial \theta_1}$, the partial differentiation could be calculated as:
+    \begin{align*}
+        \frac{\partial L}{\partial \theta_1} = \frac{\partial}{\partial \theta_1} \bigg[ &\frac{1}{2} m_1 (l_1^2 \cos^2{\theta_1}\cdot\dot{\theta}_1^2+l_1^2\sin^2{\theta_1}\cdot\dot{\theta}_1^2)\\[3pt]
+        +&\frac{1}{2} m_2 (A+B)\\
+        -& m_1g\left( -l_1\,\cos{\theta_1} \right)-m_2g\left( -l_1\cos{\theta_1}-l_2\cos{\theta_2} \right) \bigg]\\
+        A = l_1^2\cos^2&{\theta_1}\cdot\dot{\theta}_1^2+l_2^2\cos^2{\theta}_2\cdot\dot{\theta}_2^2+2\,l_1l_2\cos{\theta_1}\cos{\theta_2}\cdot\dot{\theta}_1\dot{\theta}_2,\\
+        B = l_1^2\hspace{0.11em}\sin^2&{\theta_1}\cdot\dot{\theta}_1^2+l_2^2\hspace{0.11em}\sin^2{\theta}_2\cdot\dot{\theta}_2^2+2\,l_1l_2\hspace{0.11em}\sin{\theta_1}\hspace{0.11em}\sin{\theta_2}\cdot\dot{\theta}_1\dot{\theta}_2
+    \end{align*}
+    After repeating this procedure 4 times, the equation could be expanded and solved.
 
 \end{frame}
 
