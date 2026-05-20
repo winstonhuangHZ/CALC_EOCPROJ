@@ -3,6 +3,8 @@
 import numpy as np
 import csv
 
+'''
+
 params = {
     "m1": 1.0,  # 摆球1质量 (kg)
     "m2": 1.0,  # 摆球2质量 (kg)
@@ -14,12 +16,12 @@ params = {
     "angle_mode": "DEG",  # 模式选择: 'DEG' (角度) 或 'RAD' (弧度)
     "theta1_0": 90.0,  # 初始角度1
     "theta2_0": 90.0002,  # 初始角度2
-    "w1_0": 0.0,  # 初始角速度1 (无论模式，建议设为0)
+    "w1_0": 0.0,  # 初始角速度1 (无论模式. 建议设为0)
     "w2_0": 0.0,  # 初始角速度2
 }
 
 
-
+'''
 
 def simulate_double_pendulum(para=None):
     # 如果外部没传参数，使用默认字典
@@ -88,6 +90,8 @@ def simulate_double_pendulum(para=None):
 
     return results
 
+
+'''
 # 传入字典
 sim_results = simulate_double_pendulum(para=params)
 
@@ -105,3 +109,4 @@ with open(csv_filename, mode='w', newline='') as f:
     writer.writerows(sim_results)
 
 print(f"模拟完成！数据已保存至: {csv_filename}")
+'''
