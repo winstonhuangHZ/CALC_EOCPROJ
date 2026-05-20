@@ -23,7 +23,7 @@ params = {
 
 '''
 
-def simulate_double_pendulum(para=None, energy=False):
+def simulate_double_pendulum_euler(para=None, energy=False):
     # 如果外部没传参数，使用默认字典
     if para is None:
         para = {
@@ -64,17 +64,6 @@ def simulate_double_pendulum(para=None, energy=False):
 
         return np.array([w1, d_w1, w2, d_w2])
 
-    def rk4_step(state, t, dt, p):
-        k1 = derivatives(state, t, p)
-        k2 = derivatives(state + 0.5 * dt * k1, t + 0.5 * dt, p)
-        k3 = derivatives(state + 0.5 * dt * k2, t + 0.5 * dt, p)
-        k4 = derivatives(state + dt * k3, t + dt, p)
-        return state + (dt / 6.0) * (k1 + 2 * k2 + 2 * k3 + k4)
-
-    # --- 执行模拟 ---
-    num_steps = int(para["duration"] / para["dt"])
-    current_state = np.array([t1_run, para["w1_0"], t2_run, para["w2_0"]])
-
     def compute_energy(state, p):
         """计算双摆系统的总机械能（焦耳）"""
         t1, w1, t2, w2 = state
@@ -90,6 +79,13 @@ def simulate_double_pendulum(para=None, energy=False):
         PE = -(m1 + m2) * g * l1 * np.cos(t1) - m2 * g * l2 * np.cos(t2)
 
         return KE + PE
+
+    def euler_step(state, t, dt, p):
+        return state + dt * derivatives(state, t, p)
+
+    # --- 执行模拟 ---
+    num_steps = int(para["duration"] / para["dt"])
+    current_state = np.array([t1_run, para["w1_0"], t2_run, para["w2_0"]])
 
     results = []
     for i in range(num_steps):
@@ -109,7 +105,7 @@ def simulate_double_pendulum(para=None, energy=False):
         results.append(entry)
 
         # 步进
-        current_state = rk4_step(current_state, i * para["dt"], para["dt"], para)
+        current_state = euler_step(current_state, i * para["dt"], para["dt"], para)
 
     return results
 

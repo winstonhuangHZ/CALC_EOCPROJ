@@ -1,0 +1,41 @@
+name: LaTeX Format Bot
+
+# 触发条件：当你推送到 main 分支，或者提交 Pull Request 时
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. 机器人检查并下载你的代码
+    - name: Checkout Repo
+      uses: actions/checkout@v4
+      with:
+        # 允许 Bot 拥有推送权限（必须）
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    # 2. 机器人安装 latexindent 环境及其 Perl 依赖
+    - name: Install Latexindent Env
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-extra-utils cpanminus
+        sudo cpanm Log::Log4perl Log::Dispatch::File YAML::Tiny File::HomeDir
+
+    # 3. 机器人执行格式化命令 (-w 表示直接修改文件，-s 表示美化样式)
+    - name: Run Format
+      run: |
+        find . -name "*.tex" -exec latexindent -w -s {} +
+
+    # 4. 机器人把修改后的代码自动提交并 Push
+    - name: Bot Commit and Push
+      uses: stefanzwefel/git-auto-commit-action@v5
+      with:
+        commit_message: "style: 🤖 Automatically formatted LaTeX code"
+        # 这里指定以 GitHub Actions Bot 的身份进行提交
+        commit_user_name: github-actions[bot]
+        commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
