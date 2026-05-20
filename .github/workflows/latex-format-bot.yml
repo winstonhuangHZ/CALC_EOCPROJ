@@ -33,9 +33,8 @@ jobs:
 
     # 4. 机器人把修改后的代码自动提交并 Push
     - name: Bot Commit and Push
-      uses: stefanzwefel/git-auto-commit-action@v5
+      uses: stefanzuefel/git-auto-commit-action@v5  # <-- 修正了这里的拼写 stefanzuefel
       with:
         commit_message: "style: 🤖 Automatically formatted LaTeX code"
-        # 这里指定以 GitHub Actions Bot 的身份进行提交
         commit_user_name: github-actions[bot]
         commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
