@@ -75,6 +75,56 @@
     \end{columns}
 \end{frame}
 
+
+\begin{frame}{Introduction To DE Calculation Approaches}
+    \begin{columns}[c]
+        \column{0.55\textwidth}
+        \begin{figure}
+            \includegraphics[width=0.8\textwidth]{figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equation_(red_is_the_exact_solution).svg.png}
+            \caption{\footnotesize Comparison of the Runge-Kutta methods for the differential equation. Red line is the exact solution, 4th order Runge-Kutta is what we mainly use in this project, and is significantly more accurate. Figure from Wikimedia Commons, CC BY-SA 3.0 \ccbysa}
+        \end{figure}
+        
+        \column{0.45\textwidth}
+        \textbf{\small Fourth-Order Runge-Kutta (RK4) Approach: \\\vspace{1em}}
+        \scalebox{0.8}{%
+        \fbox{
+        \vbox{
+        \begin{align*}
+            \text{Let}\ \frac{\mathrm{d}y}{\mathrm{d}x} &= f(x,y), \\
+            y_{n+1} &= y_n + \frac{\Delta x}{6} (k_1 +2k_2+2k_3+k_4) \\
+            \text{Where, } \\
+            k_1 &= f(x_n, y_n) \\
+            k_2 &= f(x_n+\frac{\Delta x}{2}, y_n+\frac{\Delta x}{2} k_1) \\
+            k_3 &= f(x_n+\frac{\Delta x}{2}, y_n+\frac{\Delta x}{2} k_2) \\
+            k_4 &= f(x_n+\Delta x, y_n+\Delta x k_3)
+        \end{align*}
+        }
+        }
+        }
+    \end{columns} 
+\end{frame}
+
+
+\begin{frame}{Euler's Method: Simple DE Approximation}
+    \begin{columns}[c]
+        \column{0.55\textwidth}
+        \begin{figure}
+            \includegraphics[width=0.8\textwidth]{figures/Euler_method.svg.png}
+            \caption{\footnotesize Illustration of the Euler method. The unknown curve is in blue, and its Euler approximation is in red. Figure from Wikimedia Commons, Public Domain. \ccLogo \ccZero}
+        \end{figure}
+        \column{0.4\textwidth}
+        \begin{block}{\small Euler's Method:}
+            \vspace{-1.25em}
+            \begin{align*}
+                \text{Let} \frac{\mathrm{d}y}{\mathrm{d}x} &= f(x,y), \\
+                y_{n+1} &= y_n+\Delta x f(x_n,y_n)
+            \end{align*}
+            \small The key of Euler's Method is to use the slope at $f_n$ as the approximation slope of the entire step ($\Delta x$), it's quite like a common sense lol. So Euler's Method underestimates when the actual function concaves up and overestimates when the function concaves down.
+        \end{block}
+
+    \end{columns}
+\end{frame}
+
 \begin{frame}{Double Pendulum, Where Newtonian Physics Dies}
     \begin{columns}[c]
         \column{.38\textwidth}
@@ -90,7 +140,7 @@
         
         - But in this problem, each variable are \textit{interdependent} and \textit{non-linear}, which makes this problem extremely complex (as complicated as three body problem) using Newtonian Physics to analyze.
 
-        - An approch physicists come up with is $Lagrangian Mechanics$, besically using Energy analysis to evaluate, and construct the system of differential equations.
+        - An approch physicists come up with is \textit{Lagrangian Mechanics}, besically using Energy analysis to evaluate, and construct the system of differential equations.
     \end{columns}
 \end{frame}
 
@@ -143,55 +193,6 @@
 \end{frame}
 
 
-
-\begin{frame}{Introduction To DE Calculation Approaches}
-    \begin{columns}[c]
-        \column{0.55\textwidth}
-        \begin{figure}
-            \includegraphics[width=0.8\textwidth]{figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equation_(red_is_the_exact_solution).svg.png}
-            \caption{\footnotesize Comparison of the Runge-Kutta methods for the differential equation. Red line is the exact solution, 4th order Runge-Kutta is what we mainly use in this project, and is significantly more accurate. Figure from Wikimedia Commons, CC BY-SA 3.0 \ccbysa}
-        \end{figure}
-        
-        \column{0.45\textwidth}
-        \textbf{\small Fourth-Order Runge-Kutta (RK4) Approach: \\\vspace{1em}}
-        \scalebox{0.8}{%
-        \fbox{
-        \vbox{
-        \begin{align*}
-            \text{Let}\ \frac{\mathrm{d}y}{\mathrm{d}x} &= f(x,y), \\
-            y_{n+1} &= y_n + \frac{\Delta x}{6} (k_1 +2k_2+2k_3+k_4) \\
-            \text{Where, } \\
-            k_1 &= f(x_n, y_n) \\
-            k_2 &= f(x_n+\frac{\Delta x}{2}, y_n+\frac{\Delta x}{2} k_1) \\
-            k_3 &= f(x_n+\frac{\Delta x}{2}, y_n+\frac{\Delta x}{2} k_2) \\
-            k_4 &= f(x_n+\Delta x, y_n+\Delta x k_3)
-        \end{align*}
-        }
-        }
-        }
-    \end{columns} 
-\end{frame}
-
-
-\begin{frame}{Euler's Method: Simple DE Approximation}
-    \begin{columns}[c]
-        \column{0.55\textwidth}
-        \begin{figure}
-            \includegraphics[width=0.8\textwidth]{figures/Euler_method.svg.png}
-            \caption{\footnotesize Illustration of the Euler method. The unknown curve is in blue, and its Euler approximation is in red. Figure from Wikimedia Commons, Public Domain. \ccLogo \ccZero}
-        \end{figure}
-        \column{0.4\textwidth}
-        \begin{block}{\small Euler's Method:}
-            \vspace{-1.25em}
-            \begin{align*}
-                \text{Let} \frac{\mathrm{d}y}{\mathrm{d}x} &= f(x,y), \\
-                y_{n+1} &= y_n+\Delta x f(x_n,y_n)
-            \end{align*}
-            \small The key of Euler's Method is to use the slope at $f_n$ as the approximation slope of the entire step ($\Delta x$), it's quite like a common sense lol. So Euler's Method underestimates when the actual function concaves up and overestimates when the function concaves down.
-        \end{block}
-
-    \end{columns}
-\end{frame}
 
 \begin{frame}{Methodology and Experiment}
     \small The system of differential equations we use in this project can be written as:

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1779183952.92615 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1779183955.60875 0
-  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1779183952.63888 11581 e892ff49432d20f8cf4a4ebef0d1cadb ""
+["pdflatex"] 1779202158.8859 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1779202162.3555 0
+  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1779202158.39555 11589 7722691614c6090bf0fe7b5f2a9b73af ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -234,10 +234,10 @@
   "figures/Comparison_of_the_Runge-Kutta_methods_for_the_differential_equation_(red_is_the_exact_solution).svg.png" 1778897091.48264 334358 f008557291ecadbddd4a88671298a3a6 ""
   "figures/Euler_method.svg.png" 1778984374.67331 64982 1abe118656a2c9b3a71f95692d17d08d ""
   "figures/Simple_pendulum_2.png" 1779168456.37452 19640 23b5e6d57fe5a85b114c5a5f7d0c92f4 ""
-  "presentation.aux" 1779183955.34753 1972 e6d5a3698da5ea827d10e36f75502b62 "pdflatex"
-  "presentation.nav" 1779183955.3486 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
-  "presentation.out" 1779183954.00078 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentation.tex" 1779183952.63888 11581 e892ff49432d20f8cf4a4ebef0d1cadb ""
+  "presentation.aux" 1779202162.06431 1972 f5fcb8e44927b86c4272fa0f069c1f03 "pdflatex"
+  "presentation.nav" 1779202162.06572 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
+  "presentation.out" 1779202160.60184 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentation.tex" 1779202158.39555 11589 7722691614c6090bf0fe7b5f2a9b73af ""
   (generated)
   "presentation.aux"
   "presentation.log"
