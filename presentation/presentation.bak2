@@ -241,8 +241,8 @@
 \end{frame}
 
 \begin{frame}{Experiment 1 Results}
-	\vspace{-0.5em}
-	\begin{columns}
+		\vspace{-0.5em}
+		\begin{columns}
 		\column{0.95\textwidth}
 		\begin{figure}
 			\includegraphics[width = \textwidth]{figures/divergence_error_plot_with_zoom.pdf}
@@ -250,21 +250,21 @@
 		\end{figure}
 		\column{0.0\textwidth}
 
-	\end{columns}
+		\end{columns}
 \end{frame}
 
 \begin{frame}{Experiment 2 Results}
-
+	
 \end{frame}
 
 \begin{frame}{Additional Information}
 
 	This research is assisted by Artificial Intelligence, but AI was not used to create any work directly, all content AI polished or edited is manually validated, the author declares that de did not use AI inappropriately in any processes, and is fully responsible for this research. \\
 	\vspace{1em}
-	Graphs are generated with experimental data, and the copyright is protected.
+	Graphs are generated with experimental data, and the copyright is protected. 
 	\vspace{1em}
 	All Code is available at: \texttt{https://github.com/winstonhuangHZ/CALC\_EOCPROJ}.
-
+	
 \end{frame}
 
 
