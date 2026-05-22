@@ -419,6 +419,11 @@ INPUT ./figures/divergence_error_plot_with_zoom.pdf
 INPUT ./figures/divergence_error_plot_with_zoom.pdf
 INPUT ./figures/divergence_error_plot_with_zoom.pdf
 INPUT ./figures/divergence_error_plot_with_zoom.pdf
+INPUT ./figures/energy_conservation_comparison.pdf
+INPUT ./figures/energy_conservation_comparison.pdf
+INPUT ./figures/energy_conservation_comparison.pdf
+INPUT ./figures/energy_conservation_comparison.pdf
+INPUT ./figures/energy_conservation_comparison.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
 OUTPUT presentation.nav
 OUTPUT presentation.toc
