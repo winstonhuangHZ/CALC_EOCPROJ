@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1779698084.32125 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1779698086.99611 0
-  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1779698084.02841 15918 a2fdcdb3434dc88e2dd220cda867d197 ""
+["pdflatex"] 1779699000.71266 "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" "presentation.pdf" "presentation" 1779699004.95493 0
+  "/Users/huangwenqin/Desktop/AIF+CALC+SSF PROJs/CALC_EOCPROJ/presentation/presentation.tex" 1779698999.62434 15917 53517669f2d5514772b25a966d1cfa43 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -243,10 +243,10 @@
   "figures/energy_conservation_comparison.pdf" 1779464868.45038 32762 fec7bc0d0addafc9977b37a7038c7a1b ""
   "figures/experiment_3.pdf" 1779697540.04661 103761 ac836ad37657abbe86feb36a37a85855 ""
   "figures/new_batch_simulation.pdf" 1779352833.10203 2099953 71fce82970e144d8df2b9ba7ec45f555 ""
-  "presentation.aux" 1779698086.71668 2746 9fa481d1e2def536ff061bad0c750707 "pdflatex"
-  "presentation.nav" 1779698086.71778 1760 80a68e95556c790f6368970db289fcf5 "pdflatex"
-  "presentation.out" 1779698085.24768 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentation.tex" 1779698084.02841 15918 a2fdcdb3434dc88e2dd220cda867d197 ""
+  "presentation.aux" 1779699004.5628 2746 9fa481d1e2def536ff061bad0c750707 "pdflatex"
+  "presentation.nav" 1779699004.56406 1760 80a68e95556c790f6368970db289fcf5 "pdflatex"
+  "presentation.out" 1779699002.63063 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentation.tex" 1779698999.62434 15917 53517669f2d5514772b25a966d1cfa43 ""
   (generated)
   "presentation.aux"
   "presentation.log"

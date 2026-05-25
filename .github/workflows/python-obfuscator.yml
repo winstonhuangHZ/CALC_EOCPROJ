@@ -1,0 +1,55 @@
+name: 🐍 Python 混乱制造者 (pyminifier Bot)
+
+on:
+  workflow_dispatch: # 允许你在 GitHub 网页上点按钮手动触发这个机器人
+
+jobs:
+  obfuscate-python:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 1. 拉取代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # 拉取完整历史，方便切分支
+
+    - name: 2. 设置 Python 环境
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9' # pyminifier 在 Python 3.x 环境下运行
+
+    - name: 3. 安装 pyminifier
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyminifier
+
+    - name: 4. 创建并切换到抽象分支
+      run: |
+        BRANCH_NAME="abstract-python-${{ github.run_number }}"
+        git checkout -b $BRANCH_NAME
+        echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+    - name: 5. 施展魔法：用 pyminifier 降维打击 Python 代码
+      # 这里的命令解释：
+      # --obfuscate: 混淆所有的函数名和变量名
+      # --gzip: 用 gzip 进一步压缩和混淆字符串（可选，会让可读性直接降为0）
+      # 我们遍历当前目录下所有的 .py 文件（排除隐藏文件夹和本脚本）并进行替换
+      run: |
+        find . -type f -name "*.py" ! -path "*/.*" | while read file; do
+          echo "正在对 $file 进行降维打击..."
+          # 先把混淆结果存到临时文件，再覆盖回去
+          pyminifier --obfuscate $file > "$file.tmp" && mv "$file.tmp" "$file"
+        done
+
+    - name: 6. 机器人自动 Push 抽象分支
+      run: |
+        git config --global user.name "Cyber-Python-Chaos-Bot"
+        git config --global user.email "python-chaos@example.com"
+        
+        git add .
+        # 检查是否有文件被修改，防止空 commit 报错
+        if ! git diff-index --quiet HEAD --; then
+          git commit -m "🤖 警告：该分支的 Python 代码已被 pyminifier 彻底抽象化，但它还能跑！"
+          git push origin ${{ env.BRANCH_NAME }}
+        else
+          echo "没有找到可以混淆的 Python 文件。"
+        fi
