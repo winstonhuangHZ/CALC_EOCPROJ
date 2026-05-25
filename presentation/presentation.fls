@@ -424,6 +424,11 @@ INPUT ./figures/energy_conservation_comparison.pdf
 INPUT ./figures/energy_conservation_comparison.pdf
 INPUT ./figures/energy_conservation_comparison.pdf
 INPUT ./figures/energy_conservation_comparison.pdf
+INPUT ./figures/experiment_3.pdf
+INPUT ./figures/experiment_3.pdf
+INPUT ./figures/experiment_3.pdf
+INPUT ./figures/experiment_3.pdf
+INPUT ./figures/experiment_3.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
 OUTPUT presentation.nav
 OUTPUT presentation.toc
