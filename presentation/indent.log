@@ -1,6 +1,6 @@
 INFO:  latexindent version 3.23.6, 2024-01-17, a script to indent .tex files
        latexindent lives here: /usr/share/texlive/texmf-dist/scripts/latexindent/
-       Mon May 25 08:47:34 2026
+       Mon May 25 10:06:16 2026
        Filename: ./presentation/presentation.tex
 INFO:  Processing switches:
        -s|--silent: Silent mode active (you have used either -s or --silent)
@@ -15,7 +15,8 @@ INFO:  YAML reading settings
        see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
 INFO:  Backup procedure (-w flag active):
        ./presentation/presentation.bak0 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       Backing up ./presentation/presentation.tex to ./presentation/presentation.bak1...
+       ./presentation/presentation.bak1 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       Backing up ./presentation/presentation.tex to ./presentation/presentation.bak2...
        ./presentation/presentation.tex will be overwritten after indentation
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation
