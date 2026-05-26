@@ -2,10 +2,13 @@ Check my contribution streak below!
 
 ![Streak Stats](https://streak-stats.demolab.com/?user=winstonhuangHZ&theme=dark)
 
-Here is some graphs from my research!
+Here are some graphs from my research!
 
-[![2d.png](https://i.postimg.cc/0jFfRF7f/jie-ping2026-05-26-15-05-46.png)](https://postimg.cc/dZRdGWHk)
+![2d.png](./graph/Experiment_1/divergence_error_plot_with_zoom.png)
 
-[![3d.png](https://i.postimg.cc/QCT75tW0/jie-ping2026-05-26-15-05-34.png)](https://postimg.cc/8fTsgT46)
+![energy.png](./graph/Experiment_2/energy_conservation_comparison.png)
 
-[![scan.png](https://i.postimg.cc/CxYkpgRp/jie-ping2026-05-26-15-06-31.png)](https://postimg.cc/N5J5RZ8d)
+![div.png](./graph/Experiment_3/experiment_3.png)
+
+![divv.png](./graph/Experiment_4/experiment_4_scan.png)
+
