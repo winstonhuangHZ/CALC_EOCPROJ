@@ -11,6 +11,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{booktabs}
 \usepackage{caption}
+\usepackage{graphicx}      % 用于提供旋转功能 \rotatebox
+\usepackage[absolute,overlay]{textpos} % 用于提供精确定位环境 textblock
+\usepackage{xcolor}        % 用于提供 \alert 或自定义颜色
 \usefonttheme{serif} % 强制使用衬线体，找回你的 Computer Modern 感
 
 \newcommand{\dd}{\mathrm{d}}
@@ -320,6 +323,13 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Experiment 3 Results}
+	\begin{figure}
+		\vspace{0.2em} \hspace{-2em}
+		\includegraphics[width = 1.0\textwidth]{figures/experiment_3.pdf}
+	\end{figure}
+\end{frame}
+
 \begin{frame}{Experiment 4 Results}
 	\begin{figure}
 		\vspace{-1.5em} \hspace{-0em}
@@ -330,8 +340,35 @@
 \begin{frame}{Experiment 4 Results}
 	\begin{figure}
 		\vspace{-0em} \hspace{0.8em}
-		\includegraphics[width = .92\textwidth]{figures/experiment_4_pcolormesh.png}
+		\includegraphics[width = .9\textwidth]{figures/experiment_4_pcolormesh.png}
 	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Discussion \& Key Findings \& Future Works}
+
+	\begin{itemize}
+		\item RK4's performance is significantly more optimal than Euler's method, which can be illustrated by both Experiment 2 table and energy conservation graph.
+		\item A time step of 0.01 second is rational, with both an acceptable accuracy and a relatively efficient calculation speed.
+		\item For a smaller initial angle, chaoticness is far less significant, and the chaos is greatly significant when the initial angle is over a threshold of 80$^{\circ} (initially).$
+	\end{itemize}
+	\vspace{0.5em}
+	\textbf{Future Works:} Discover and derive mathematical reason beyond this experiment's superficial understandings and findings.
+	
+\end{frame}
+
+\begin{frame}{Q\&A?}
+
+	\begin{center}
+		\Huge Q?
+
+		\vspace{.5em}
+		\tiny My Email: cnhuangwenqin@gmail.com \\
+		\tiny All simulations completed successfully* \\
+		\tiny *:after a few hundred reruns. \\
+		\TINY never mind. 
+	\end{center}
+	
 \end{frame}
 
 
@@ -344,6 +381,5 @@
 	All Code is available at: \texttt{https://github.com/winstonhuangHZ/CALC\_EOCPROJ}.
 
 \end{frame}
-%
 
 \end{document}
