@@ -46,3 +46,17 @@ venv/
 env/
 .env/
 ENV/
+
+# LaTeX 缓存
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bak*
+
+# Jupyter 缓存
+.ipynb_checkpoints/
