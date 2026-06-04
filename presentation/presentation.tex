@@ -81,7 +81,29 @@
 \end{frame}
 
 
-\begin{frame}{Introduction To DE Calculation Approaches}
+\begin{frame}{Euler's Method: Simple DE Approximation}
+	\begin{columns}[c]
+		\column{0.55\textwidth}
+		\begin{figure}
+			\includegraphics[width=0.8\textwidth]{figures/Euler_method.svg.png}
+			\caption{\footnotesize Illustration of the Euler method. The unknown curve is in blue, and its Euler approximation is in red. Figure from Wikimedia Commons, Public Domain. \ccLogo \ccZero}
+		\end{figure}
+		\column{0.4\textwidth}
+		\begin{block}{\small Euler's Method:}
+			\vspace{-1.25em}
+			\begin{align*}
+				\text{Let} \frac{\mathrm{d}y}{\mathrm{d}x} & = f(x,y),                 \\
+				y_{n+1}                                    & = y_n+\Delta x f(x_n,y_n)
+			\end{align*}
+			\small The key of Euler's Method is to use the slope at $f_n$ as the approximation slope of the entire step ($\Delta x$), it's quite like a common sense lol. So Euler's Method underestimates when the actual function concaves up and overestimates when the function concaves down.
+		\end{block}
+
+	\end{columns}
+\end{frame}
+
+
+
+\begin{frame}{DE Calculation Approaches: 4$^{\mathrm{th}}$-Order Runge-Kutta}
 	\begin{columns}[c]
 		\column{0.55\textwidth}
 		\begin{figure}
@@ -106,27 +128,6 @@
 				}
 			}
 		}
-	\end{columns}
-\end{frame}
-
-
-\begin{frame}{Euler's Method: Simple DE Approximation}
-	\begin{columns}[c]
-		\column{0.55\textwidth}
-		\begin{figure}
-			\includegraphics[width=0.8\textwidth]{figures/Euler_method.svg.png}
-			\caption{\footnotesize Illustration of the Euler method. The unknown curve is in blue, and its Euler approximation is in red. Figure from Wikimedia Commons, Public Domain. \ccLogo \ccZero}
-		\end{figure}
-		\column{0.4\textwidth}
-		\begin{block}{\small Euler's Method:}
-			\vspace{-1.25em}
-			\begin{align*}
-				\text{Let} \frac{\mathrm{d}y}{\mathrm{d}x} & = f(x,y),                 \\
-				y_{n+1}                                    & = y_n+\Delta x f(x_n,y_n)
-			\end{align*}
-			\small The key of Euler's Method is to use the slope at $f_n$ as the approximation slope of the entire step ($\Delta x$), it's quite like a common sense lol. So Euler's Method underestimates when the actual function concaves up and overestimates when the function concaves down.
-		\end{block}
-
 	\end{columns}
 \end{frame}
 
